@@ -1,0 +1,53 @@
+System Monitor
+
+A simple Python-based system monitoring tool that displays real-time information about CPU usage, RAM usage, and running processes.
+
+Features
+
+- Real-time CPU usage monitoring
+- RAM usage (total, used, percentage)
+- Displays top 10 running processes
+- Shows process names and PIDs
+- Auto-refresh every few seconds
+- Error handling for disappearing or inaccessible processes
+
+Technologies Used
+
+- Python
+- psutil
+- os
+- time
+
+How to Run
+
+1. Install required library:
+-> pip install psutil
+
+2. Run the script:
+-> python system_monitor.py
+
+Example Output
+--- Systemdaten --- 
+CPU-Auslastung: 5.2 % 
+RAM gesamt: 15.94 GB 
+RAM verwendet: 8.12 GB 
+RAM Auslastung: 51.0 % 
+
+--- Prozesse --- 
+chrome.exe (PID: 1234) 
+python.exe (PID: 5678) 
+explorer.exe (PID: 4321)
+
+Purpose
+
+- Working with system processes
+- Handling real-time data
+- Error handling in Python
+- Building useful command-line tools
+
+Future Improvements
+
+- Sort processes by CPU usage
+- Display memory usage per process
+- Export logs to a file
+- Improve UI formatting
